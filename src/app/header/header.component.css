@@ -1,0 +1,107 @@
+:host {
+    padding: 20px;
+    transition: all 0.3s ease; /* Tambahkan transisi untuk perubahan umum */
+    width: 100%; /* Lebar penuh */
+   
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Transisi untuk perubahan layout */
+  }
+  
+  /* Judul header */
+  :host .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #242424;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transisi untuk ukuran font dan warna */
+  }
+  
+  :host nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Transisi untuk margin dan layout */
+  }
+  
+  /* Styling untuk item navigasi */
+  :host nav span {
+    color: #353524;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease, margin-left 0.3s ease; /* Transisi untuk warna, ukuran font, dan margin */
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  :host nav span:hover {
+    color: #333333; /* Warna teks saat hover */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), /* Efek glowing putih */
+                 0 0 15px rgba(255, 255, 255, 0.6), /* Glowing yang lebih jauh */
+                 0 0 20px rgba(255, 255, 255, 0.4); /* Glowing paling jauh */
+    transition: all 0.3s ease; /* Transisi agar perubahan halus */
+  }
+  
+  
+  /* Media Query untuk layar tablet */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    :host .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    :host nav {
+      justify-content: flex-start;
+      margin-top: 0;
+    }
+  
+    :host nav span {
+      margin-left: 10px;
+      font-size: 14px;
+      color:#bebe50;
+    }
+  }
+  
+  /* Media Query untuk layar ponsel */
+  @media (max-width: 480px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    :host .title {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 3px;
+    }
+  
+    :host nav {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 5px;
+    }
+  
+    :host nav span {
+      font-size: 14px;
+      margin-left: 4px;
+   
+      color: rgb(11, 11, 11);
+     
+    }
+  }
+  
+  /* Media Query untuk layar medium (946px) */
+  @media (max-width: 946px) {
+    :host .title {
+      color: rgb(255, 255, 255);
+    }
+
+   
+  }
+  

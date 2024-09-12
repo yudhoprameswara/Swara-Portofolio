@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar elemen */
+}
+
+/* Aturan untuk HTML */
+html {
+    height: 100%; /* Tinggi penuh untuk HTML */
+}
+
+/* Aturan untuk Body */
+body {
+    background-color: rgb(236, 236, 236);
+    height: 100%; /* Pastikan body mengambil tinggi penuh */
+    min-height: 100vh; /* Tinggi minimal layar untuk body */
+    background-image: url('./assets/cool-background.svg'); /* Jalur ke file SVG lokal */
+    background-size: cover; /* Memenuhi seluruh area container */
+    background-position: center; /* Pusat gambar */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    font-family: Arial, Helvetica, sans-serif; /* Atur font global */
+}
+
+/* Opsional: Pengaturan untuk elemen lainnya */
+a {
+    color: inherit; /* Warna link mengikuti warna teks global */
+    text-decoration: none; /* Hapus garis bawah default pada link */
+}
+
+img {
+    max-width: 100%; /* Pastikan gambar responsif */
+    height: auto; /* Atur tinggi otomatis agar proporsional */
+}
