@@ -1,0 +1,37 @@
+
+
+.accordion-item{
+    border-radius: 10px;
+    background-color: aliceblue;
+   border: none;
+    margin-bottom: 10px; /* Tambahkan jarak antar item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow ringan */
+}
+
+.accordion-item span{
+    color: #cd491c;
+}
+
+/* Warna untuk header accordion */
+.accordion-button {
+    background-color: #f8f9fa; /* Light background */
+    color: #000; /* Text color */
+    border-radius: 8px;
+  }
+
+  /* Warna saat accordion terbuka */
+  .accordion-button:not(.collapsed) {
+    background-color: #e2e6ea; /* Slightly darker light background */
+    color: #000; /* Text color */
+    border-bottom-left-radius: 0; /* Menghilangkan radius bawah agar menyatu dengan body */
+    border-bottom-right-radius: 0;
+  }
+
+  /* Warna untuk body accordion */
+  .accordion-body {
+    background-color: #f8f9fa; /* Light background */
+    color: #000; /* Text color */
+    border-radius: 0 0 8px 8px; 
+    
+  }
+  

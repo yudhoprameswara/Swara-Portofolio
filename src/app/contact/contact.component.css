@@ -14,6 +14,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.5s;
 }
 
 /* Title and Paragraph styles */
@@ -23,12 +24,16 @@ body {
     margin-bottom: 15px;
 }
 
+
 .contact-container p {
     color: #555;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
+.contact-container img {
+    width: 20px;
+}
 /* Form styles */
 form {
     display: flex;
@@ -78,4 +83,11 @@ input[type="submit"]:hover {
     .contact-container {
         width: 90%;
     }
+}
+
+.header-contact{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    
 }

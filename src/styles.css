@@ -8,18 +8,21 @@
 /* Aturan untuk HTML */
 html {
     height: 100%; /* Tinggi penuh untuk HTML */
+
 }
 
 /* Aturan untuk Body */
 body {
+    overflow-y: scroll;
     background-color: rgb(236, 236, 236);
     height: 100%; /* Pastikan body mengambil tinggi penuh */
     min-height: 100vh; /* Tinggi minimal layar untuk body */
-    background-image: url('./assets/cool-background.svg'); /* Jalur ke file SVG lokal */
+    background-image: url('/assets/cool-background.svg'); /* Jalur ke file SVG lokal */
     background-size: cover; /* Memenuhi seluruh area container */
-    background-position: center; /* Pusat gambar */
+    background-position: left; /* Pusat gambar */
     background-repeat: no-repeat; /* Tidak mengulang gambar */
-    font-family: Arial, Helvetica, sans-serif; /* Atur font global */
+    font-family: "Poppins", sans-serif;
+    transition: all 0.7s ease;
 }
 
 /* Opsional: Pengaturan untuk elemen lainnya */
@@ -31,4 +34,26 @@ a {
 img {
     max-width: 100%; /* Pastikan gambar responsif */
     height: auto; /* Atur tinggi otomatis agar proporsional */
+}
+
+@media (max-width: 768px) { 
+  body{
+    background-position: center;
+  }
+  }
+  
+  /* Media Query untuk layar ponsel */
+  @media (max-width: 480px) {
+    body{
+        background-position: center;
+      }
+  }
+
+  
+  /* Media Query untuk layar medium (946px) */
+  @media (max-width: 946px) {
+    body{
+        background-position: center;
+      }
+
 }

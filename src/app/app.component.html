@@ -1,5 +1,21 @@
+@if(isLoading){
+    <app-loading></app-loading>
+}
+
 <app-header></app-header>
 <main>
-    <app-about></app-about>
-    <app-contact></app-contact>
+    <router-outlet></router-outlet>
+    <div id="contact">
+
+        @if(!phoneRinging){
+            <app-contact></app-contact>
+        }
+    </div>
 </main>
+
+@if (phoneRinging && !isLoading) {
+    <a href="#contact" class="phone-float" (click)="onPhone()">
+        <img src="/assets/phone.png" alt="phone">
+    </a>
+}
+

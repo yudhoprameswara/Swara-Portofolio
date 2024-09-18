@@ -1,0 +1,109 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Anda bisa menyesuaikan lebar slider */
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transisi yang lebih smooth */
+  }
+  
+  .slider {
+    min-width: 100%/3; /* Setiap slide mengambil 100% dari lebar container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .slider img {
+    max-width: 55px;
+    height: auto;
+    border-radius: 10px; /* Menambahkan rounded corners ke gambar */
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .slider img:hover{
+    max-width: 60px;
+  }
+  
+  .slider span {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0); /* Transparan untuk tampilan yang lebih bersih */
+    color:  rgba(0, 0, 0, 0.5);;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 100;
+  }
+  
+  button.prev {
+    left: -12px;
+  }
+  
+  button.next {
+    right: -12px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    font-size: 2.1em;
+  }
+  
+  .spin img {
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Media Query untuk layar ponsel */
+  @media (max-width: 480px) {
+    
+
+    .slider{
+      min-width: 100%/10
+    }
+    .slider img {
+      max-width: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .slider{
+      min-width: 100%/8
+
+    }
+
+    .slider img {
+      max-width: 30px;
+    }
+  }
+  
+  
+  /* Media Query untuk layar medium (946px) */
+  @media (max-width: 946px) {
+
+
+}
+  

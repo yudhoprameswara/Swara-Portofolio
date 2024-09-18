@@ -17,6 +17,7 @@
     font-weight: bold;
     color: #242424;
     transition: color 0.3s ease, font-size 0.3s ease; /* Transisi untuk ukuran font dan warna */
+    /* text-shadow: 2px 2px 4px rgba(62, 62, 62, 0.289); */
   }
   
   :host nav {
@@ -48,7 +49,7 @@
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
   
     :host .title {
@@ -64,7 +65,7 @@
     :host nav span {
       margin-left: 10px;
       font-size: 14px;
-      color:#bebe50;
+      color: #e4c641;
     }
   }
   
@@ -89,7 +90,7 @@
   
     :host nav span {
       font-size: 14px;
-      margin-left: 4px;
+      margin-left: 6px;
    
       color: rgb(11, 11, 11);
      

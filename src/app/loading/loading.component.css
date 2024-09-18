@@ -1,0 +1,45 @@
+:host{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(236, 236, 236);
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-end;
+    color: #000;
+    margin: 20px ;
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the image */
+img.spin {
+      width: 168px;
+    animation: spin 2s linear infinite; /* Spin every 2 seconds infinitely */
+    display: block; /* Optional: Ensures it's treated as a block element */
+    margin: 0 auto; /* Optional: Centers the image */
+  }
+
+  /* HTML: <div class="loader"></div> */
+.loader {
+    width: 10px;
+    margin-bottom: 4px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, #000 90%, #0000) 0 / calc(100% / 3) 60% space;
+    clip-path: inset(0 100% 0 0);
+    animation: _ngcontent-ng-c2274960758_l1 1s steps(4) infinite;
+}
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
