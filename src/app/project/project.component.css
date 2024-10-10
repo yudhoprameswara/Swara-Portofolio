@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-container {
+  background-color: #f4f4f4;
+  width: 694px;
+  height: 510px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek yang halus */
+}
+
+.content-container:hover {
+  transform: scale(1.05); /* Membesarkan elemen saat hover */
+}
+
+
+.content-container a {
+  color: black;
+  font-size: 20px;
+}
+
+.content {
+  background-color: #c9c2c2;
+  width: 620px;
+  height: 352px;
+  margin: 25px;
+  border-radius: 5px;
+  object-fit: cover;
+  overflow: hidden; /* Agar gambar tidak keluar dari kontainer */
+}
+
+.skill{
+    display: flex;
+    color: rgb(87, 87, 87);
+}
+
+.skill div{
+    margin: 0 5px;
+    background-color: rgb(215, 215, 215);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.content-container .repo {
+    color: rgb(17 93 158);
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  
